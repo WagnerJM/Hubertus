@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  
+  server:
+    environment:
+      - APP_SETTINGS=development
+      - FLASK_APP=wsgi.py
+      - FLASK_ENV=development
+     
+    command: flask run --host=0.0.0.0
+
+  task_queue:
+    command: celery -A tasks worker  --loglevel=info

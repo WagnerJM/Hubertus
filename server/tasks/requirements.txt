@@ -1,0 +1,15 @@
+celery
+redis
+flower
+flask
+flask-restful
+requests
+flask-script
+flask-cors
+flask-sqlalchemy
+flask-migrate
+flask-marshmallow
+marshmallow-sqlalchemy
+psycopg2-binary
+redis
+Flask-JWT-Extended
