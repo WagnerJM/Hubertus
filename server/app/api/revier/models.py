@@ -26,8 +26,7 @@ class GrenzPunkt(db.Model, BaseMixin):
     long = db.Column(db.Float)
     lat = db.Column(db.Float)
 
-    def __init__(self, revier_id, long, lat):
-        self.revier_id = revier_id
+    def __init__(self, long, lat):
         self.long = long
         self.lat = lat
 
